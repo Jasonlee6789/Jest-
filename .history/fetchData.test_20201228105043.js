@@ -18,9 +18,10 @@ test("FetchTwoData-方法测试", () => {
 });
 
 test("FetchThreeData-方法测试", () => {
-  expect.assertions(1); //断言，必须执行一次expect
   return fetchThreeData().catch((e) => {
-    //console.log(e.toString());
-    expect(e.toString().indexOf("404") > -1).toBe(true);
+    console.log(e.toString());
+    expect(response.data).toEqual({
+      success: true,
+    });
   });
 });
