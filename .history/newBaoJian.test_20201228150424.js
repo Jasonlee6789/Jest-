@@ -68,9 +68,6 @@ describe("刘英相关服务", () => {
     console.log(baojian.fuwu);
     expect(baojian.fuwu).toEqual("刘英走进房间为你宫廷沐浴");
   });
-  afterEach(() => {
-    console.log("------刘英，你服务的很好，给你50元小费");
-  });
 });
 afterEach(() => {
   console.log("afterEach:完成后，我心满意足的坐在沙发上！！！");
