@@ -81,19 +81,3 @@ test("toContain匹配器", () => {
   const data = new Set(arr);
   expect(data).toContain("谢大脚");
 });
-
-const throwNewErrorFunc = () => {
-  throw new Error("this is a new error");
-};
-
-test("toThrow匹配器", () => {
-  expect(throwNewErrorFunc).toThrow();
-});
-
-const throwNewErrorFunc = () => {
-  throw new Error("this is a new error");
-};
-
-test("toThrow匹配器", () => {
-  expect(throwNewErrorFunc).toThrow("this is a new error");
-});

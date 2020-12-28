@@ -89,11 +89,3 @@ const throwNewErrorFunc = () => {
 test("toThrow匹配器", () => {
   expect(throwNewErrorFunc).toThrow();
 });
-
-const throwNewErrorFunc = () => {
-  throw new Error("this is a new error");
-};
-
-test("toThrow匹配器", () => {
-  expect(throwNewErrorFunc).toThrow("this is a new error");
-});

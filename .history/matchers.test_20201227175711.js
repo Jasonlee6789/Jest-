@@ -70,30 +70,3 @@ test("toMatch匹配器", () => {
   const str = "谢大脚、刘英、小红";
   expect(str).toMatch("谢大脚");
 });
-
-test("toContain匹配器", () => {
-  const arr = ["谢大脚", "刘英", "小红"];
-  expect(arr).toContain("谢大脚");
-});
-
-test("toContain匹配器", () => {
-  const arr = ["谢大脚", "刘英", "小红"];
-  const data = new Set(arr);
-  expect(data).toContain("谢大脚");
-});
-
-const throwNewErrorFunc = () => {
-  throw new Error("this is a new error");
-};
-
-test("toThrow匹配器", () => {
-  expect(throwNewErrorFunc).toThrow();
-});
-
-const throwNewErrorFunc = () => {
-  throw new Error("this is a new error");
-};
-
-test("toThrow匹配器", () => {
-  expect(throwNewErrorFunc).toThrow("this is a new error");
-});
