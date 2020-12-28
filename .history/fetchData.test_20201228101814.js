@@ -10,9 +10,5 @@ test("FecthData-方法测试", (done) => {
 });
 
 test("FetchTwoData-方法测试", () => {
-  return fetchTwoData().then((response) => {
-    expect(response.data).toEqual({
-      success: true,
-    });
-  });
+  fetchTwoData;
 });
