@@ -31,13 +31,5 @@ test("FetchThreeData-方法测试", () => {
 });
 
 test("FetchFourData-方法测试", async () => {
-  //   await expect(fetchFourData()).resolves.toMatchObject({
-  //     data: {
-  //       success: true,
-  //     },
-  //   });
-  const response = await fetchFourData();
-  expect(response.data).toEqual({
-    success: true,
-  });
+  await expect();
 });

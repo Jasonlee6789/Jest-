@@ -14,6 +14,6 @@ export const fetchThreeData = () => {
   return axios.get("http://a.jspang.com/jestTest_error.json");
 };
 
-export const fetchFourData = () => {
+export const fetchTwoData = () => {
   return axios.get("http://a.jspang.com/jestTest.json");
 };
